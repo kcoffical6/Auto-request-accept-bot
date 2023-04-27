@@ -19,7 +19,7 @@ class Bot(Client):
         )
 
     async def start(self):
-        await self.start()
+        await super().start()
         print("Bot is started.")
 
         if cfg.WEB_SERVER:
@@ -42,7 +42,7 @@ class Bot(Client):
             await web.TCPSite(app, "0.0.0.0", cfg.PORT).start()
 
     async def stop(self, *args):
-        await self.stop()
+        await super().stop()
         print("Bot is stopped.")
 
 
