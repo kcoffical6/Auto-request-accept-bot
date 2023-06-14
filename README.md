@@ -2,7 +2,7 @@
 👾 Hey I'll Accept telegram join requests. Easy to use and simple.
 
 ## 🚀 Demo Bot
-- [@SDAutoApproveBot](https://t.me/SDAutoApproveBot)
+- [@join_accept_bot](https://t.me/join_accept_bot)
 
 <h2>〽️ Deploy Me </h2> 
   
@@ -25,7 +25,7 @@
 
 
   ```ssh
-  git clone https://github.com/ImDenuwan/Auto-Approve-Bot
+  git clone [[https://github.com/ImDenuwan/Auto-Approve-Bot]
   pip3 install -r requirements.txt
   # fill config.py vars
   python3 bot.py
