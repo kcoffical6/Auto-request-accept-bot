@@ -140,7 +140,7 @@ async def chk(_, cb: CallbackQuery):
                         InlineKeyboardButton(
                             "➕ Add me to your group ➕", url="https://t.me/join_accept_bot?startgroup=true&admin=invite_users+manage_chat+post_messages")
                     ], [
-                        inlinekeyboardButton(
+                        InlinekeyboardButton(
                             "➕ Add me to your channel ➕", url="https://t.me/join_accept_bot?startchannel=Bots4Sale&admin=invite_users+manage_chat+post_messages")
                     ]
                 ]
