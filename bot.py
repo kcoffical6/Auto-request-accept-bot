@@ -85,7 +85,7 @@ async def op(_, m: Message):
                         InlineKeyboardButton(
                             "🗯 UPDATE", url="https://t.me/apz_botz"),
                         InlineKeyboardButton(
-                            "💬 CHANNEL", url="https://t.me/apz_official")
+                            "💬MOVIES CHANNEL", url="https://t.me/apz_official")
                     ], [
                         InlineKeyboardButton(
                             "➕ Add me to your group ➕", url="https://t.me/join_accept_bot?startgroup=true&admin=invite_users+manage_chat+post_messages")
@@ -96,7 +96,7 @@ async def op(_, m: Message):
                 ]
             )
             add_user(m.from_user.id)
-            await m.reply_photo("https://telegra.ph/file/12a39eecaa3031e3c4409.png", caption="**👋 Hello {}!\nAdd This Bot To Your Channel To Accept Join Requests Automatically 😊\n\n__Powerd By : #TEAM_APZ**".format(m.from_user.mention, "https://t.me/telegram/153"), reply_markup=keyboard)
+            await m.reply_photo("https://telegra.ph/file/12a39eecaa3031e3c4409.png", caption="**👋 Hello {}!\nI'M AUTO JOIN REQUEST ACCEPT BOT\n━━━━━━━━━━━━━━━━━━━━━━━━━\n● ɪ ᴄᴀɴ ᴀᴜᴛᴏ ᴀᴘᴘʀᴏᴠᴇ ᴜꜱᴇʀꜱ ᴊᴏɪɴ ʀᴇQᴜᴇꜱᴛ ɪɴ ɢʀᴏᴜᴘꜱ ᴀɴᴅ ᴄʜᴀɴɴᴇʟꜱ.\n● ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ᴏʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇ ᴍᴇ ᴀᴅᴍɪɴ ᴡɪᴛʜ ᴘᴇʀᴍɪꜱꜱɪᴏɴꜱ.😊\n\n__Powerd By: #TEAM_APZ**".format(m.from_user.mention, "https://t.me/telegram/153"), reply_markup=keyboard)
 
         elif m.chat.type == enums.ChatType.GROUP or enums.ChatType.SUPERGROUP:
             keyboar = InlineKeyboardMarkup(
@@ -138,7 +138,10 @@ async def chk(_, cb: CallbackQuery):
                             "💬 MOVIES CHANNEL", url="https://t.me/apz_official")
                     ], [
                         InlineKeyboardButton(
-                            "➕ Add me to your Chat ➕", url="https://t.me/join_accept_bot?startgroup")
+                            "➕ Add me to your group ➕", url="https://t.me/join_accept_bot?startgroup=true&admin=invite_users+manage_chat+post_messages")
+                    ], [
+                        inlinekeyboardButton(
+                            "➕ Add me to your channel ➕", url="https://t.me/join_accept_bot?startchannel=Bots4Sale&admin=invite_users+manage_chat+post_messages")
                     ]
                 ]
             )
